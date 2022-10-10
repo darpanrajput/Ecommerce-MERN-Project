@@ -1,0 +1,53 @@
+[
+  {
+    "calling function": "const result = await axios.post(http://localhost:5000/api/payment/create-order),{amount: orderAmount + '00'});"
+  },
+
+  {
+    "data": {
+      "id": "order_JliJEY1NNMFdfO",
+      "entity": "order",
+      "amount": 6700,
+      "amount_paid": 0,
+      "amount_due": 6700,
+      "currency": "INR",
+      "receipt": "aobi-MStq",
+      "offer_id": null,
+      "status": "created",
+      "attempts": 0,
+      "notes": [],
+      "created_at": 1656157072
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "content-length": "216",
+      "content-type": "application/json; charset=utf-8"
+    },
+    "config": {
+      "transitional": {
+        "silentJSONParsing": true,
+        "forcedJSONParsing": true,
+        "clarifyTimeoutError": false
+      },
+      "adapter": ["Function", "xhrAdapter"],
+      "transformRequest": [["Function", "transformResponse"]],
+      "transformResponse": [["Function", "transformResponse"]],
+      "timeout": 0,
+      "xsrfCookieName": "'XSRF-TOKEN'",
+      "xsrfHeaderName": "'X-XSRF-TOKEN'",
+      "maxContentLength": -1,
+      "maxBodyLength": -1,
+      "env": { "FormData": null },
+      "validateStatus": ["Function", "validateStatus"],
+      "headers": {
+        "Accept": { "application/json": "text/plain" },
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "url": "http://localhost:5000/api/payment/create-order",
+      "data": { "amount": "6700" }
+    },
+    "request": {}
+  }
+]

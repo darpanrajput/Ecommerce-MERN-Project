@@ -1,0 +1,493 @@
+[{
+  "_id": {
+    "$oid": "62c3189d6976f785c6efa40b"
+  },
+  "title": "AARA Women's Polyester V-Neck Skater Knee Length Casual Dress",
+  "desc": "Aara Women's Knee Length Dress ( 201605233-L_Navy Blue_Large)",
+  "img": "https://m.media-amazon.com/images/I/71HtA8t+7wS._UY741_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Black",
+    "White",
+    "Yellow",
+    "Orange"
+  ],
+  "price": 800,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656952989520"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417769195"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c31ed96976f785c6efa40d"
+  },
+  "title": "Atyantah Men's Summer Night Wear Launge Wear Suit/dress- Shirt Boxer Pair-Pack-20 Variation",
+  "desc": "Aara Women's Knee Length Dress ( 201605233-L_Navy Blue_Large)",
+  "img": "https://m.media-amazon.com/images/I/71tUiyENrAL._UY679_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Yellow",
+    "Green"
+  ],
+  "price": 700,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656954585098"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417811361"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c31f296976f785c6efa40f"
+  },
+  "title": "queens world Men's Soft Poli Lycra Digital Printed Casual Homewear Set Night Suit Beach Wear",
+  "desc": "The queens world brand Presenting a New Lounge Wear made of premium quality material. Searching for casual shirts for this summer or festive? Then this smart shirt, Digital Printed queens world shirt from the house of queens world Garments is here to end your search. This amazing printed shirt will make you fall in love with the attractive color",
+  "img": "https://m.media-amazon.com/images/I/31le0l0pG2L._UX522_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Black",
+    "Gray"
+  ],
+  "price": 700,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656954665831"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417860477"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c31f7e6976f785c6efa411"
+  },
+  "title": "Nidhi Sequence Men's Rayon Cotton Lining Digital Printed Stitched Half Sleeve Shirt",
+  "desc": "We Launch exclusive new range of high quality printed casual shirt for mans under range; This printed casual shirt has slim collar; a full button placket; long sleeves; and a curved hemline; the product made out of best quality Rayon. It designed for comfort and style; it can be worn to parties; casual meetings or a movie date. Make it up with a pair of denims; chinos; shorts or formal trousers and set the town on fire with your Style. 100% Washable Digital Printed Shirts Fabric White Hand-wash, MACHINE WASH DIGITAL PRINTED SHIRTS.",
+  "img": "https://m.media-amazon.com/images/I/71XpfdVVJFL._UX679_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": [
+    "Yellow",
+    "Green"
+  ],
+  "price": 500,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656954750297"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417885697"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c31ffd6976f785c6efa413"
+  },
+  "title": "BLIVE Men's Round Neck Full Sleeves T-Shirt",
+  "desc": "High quality premium Round Neck Full sleeves Tshirt direct from the manufacturers",
+  "img": "https://m.media-amazon.com/images/I/51lomokxxXL._UX679_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Pink",
+    "Blue",
+    "Red",
+    "Orange"
+  ],
+  "price": 200,
+  "inStock": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656954877920"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417906970"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c3205f6976f785c6efa415"
+  },
+  "title": "Priyanka Trends Striped Causal Wear Men's",
+  "desc": "The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.",
+  "img": "https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Pink",
+    "Blue",
+    "Red",
+    "Orange"
+  ],
+  "price": 400,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656954975480"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417930966"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c320796976f785c6efa419"
+  },
+  "title": " Striped Causal Wear Men's",
+  "desc": "The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.",
+  "img": "https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg",
+  "categories": [
+    "Men's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Purple",
+    "Orange"
+  ],
+  "price": 400,
+  "inStock": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656955001138"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417953002"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c320da6976f785c6efa41b"
+  },
+  "title": "Women's Crepe Wrap Maxi Dress",
+  "desc": "Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..",
+  "img": "https://m.media-amazon.com/images/I/81bCiJ2-HvL._UX679_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Purple",
+    "Orange"
+  ],
+  "price": 900,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656955098730"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417970148"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c320f86976f785c6efa41f"
+  },
+  "title": "Women's Crepe Wrap Maxi Dress 1",
+  "desc": "Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..",
+  "img": "https://m.media-amazon.com/images/I/71hchrZIjGL._SX679._SX._UX._SY._UY_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Red",
+    "Orange"
+  ],
+  "price": 900,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656955128779"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657417984929"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c321126976f785c6efa421"
+  },
+  "title": "Women's Crepe Wrap Maxi Dress -Powder Blue",
+  "desc": "Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..",
+  "img": "https://m.media-amazon.com/images/I/71KNll7rpWL._SX679._SX._UX._SY._UY_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Purple",
+    "Yellow",
+    "Orange"
+  ],
+  "price": 900,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656955154658"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657418001325"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c321316976f785c6efa423"
+  },
+  "title": "Women's Crepe Wrap Maxi Dress -Yellow",
+  "desc": "Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..",
+  "img": "https://m.media-amazon.com/images/I/91S8T6amJPL._SX679._SX._UX._SY._UY_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Purple",
+    "Yellow",
+    "Orange"
+  ],
+  "price": 833,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1656955185266"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1657178601451"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d517396d20a6005f474e48"
+  },
+  "title": "Lymio Below The Knee Dress",
+  "desc": "Lymio Women's Rayon A-Line Below The Knee Dress..",
+  "img": "https://m.media-amazon.com/images/I/71QsQw+0KTL._UY741_.jpg",
+  "categories": [
+    "Women's cloths",
+    "Summer Collection"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Gray"
+  ],
+  "price": 800,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1658132281172"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1658132792728"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d5179a6d20a6005f474e4a"
+  },
+  "title": "Hawaiin Aloha Printed Half Sleeve Shirt",
+  "desc": "GLORYBOYZ Men's Summer Beach Wear Travel Floral Hawaiin Aloha Printed Half Sleeve Shirt..",
+  "img": "https://m.media-amazon.com/images/I/81gDK6EYl+L._UY879_.jpg",
+  "categories": [
+    "Summer Collection"
+  ],
+  "size": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "color": [
+    "Black",
+    "Gray"
+  ],
+  "price": 700,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1658132378652"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1658132802208"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62d9413cc837b9875cb3dbe2"
+  },
+  "title": "VIMAL JONNEY Men's Slim Fit T-Shirt",
+  "desc": "sankill Unisex Summer Printed T Shirts for Men Women Short Sleeve Tops Tees",
+  "img": "https://firebasestorage.googleapis.com/v0/b/react-admin-dashboard2.appspot.com/o/1658405178109-t-shirt.jpg?alt=media&token=5adaa76e-130a-49be-a298-acea4b8fc5c2",
+  "categories": [
+    "men"
+  ],
+  "size": [
+    "M"
+  ],
+  "color": [
+    "purple-Grey"
+  ],
+  "price": 12,
+  "inStock": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1658405180212"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1658405180212"
+    }
+  },
+  "__v": 0
+}]

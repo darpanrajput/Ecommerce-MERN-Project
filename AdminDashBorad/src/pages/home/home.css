@@ -1,0 +1,9 @@
+.home {
+  flex: 4;
+  /* background-color: aqua; */
+}
+
+.homeWidget {
+  display: flex;
+  margin: 20px;
+}

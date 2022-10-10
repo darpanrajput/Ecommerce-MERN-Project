@@ -1,0 +1,92 @@
+.App.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+
+  .sidebarListItem,
+  .chartTitle,
+  .widgetLgTitle,
+  .widgetSmTitle,
+  .widgetSmUserTitle,
+  .widgeLgName {
+    color: white;
+  }
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: gray;
+    }
+  }
+
+  .logo {
+    color: #999;
+  }
+
+  .topbarIcon {
+    color: white;
+  }
+
+  .topbar {
+    color: #999;
+    background-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .MuiDataGrid-cell--textLeft,
+  .MuiDataGrid-columnHeaderTitleContainer,
+  .MuiTablePagination-root {
+    color: white;
+  }
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+  .userList {
+    color: white;
+  }
+  .datatable {
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,1206 @@
+{
+  "info": {
+    "_postman_id": "11341257-509e-414d-8124-eebe8a2c3e45",
+    "name": "Ecommerce Backend API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21767319"
+  },
+  "item": [
+    {
+      "name": "Add the Products to DB",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"Hawaiin Aloha Printed Half Sleeve Shirt\",\r\n    \"desc\": \"GLORYBOYZ Men's Summer Beach Wear Travel Floral Hawaiin Aloha Printed Half Sleeve Shirt..\",\r\n    \"img\": \"https://m.media-amazon.com/images/I/81gDK6EYl+L._UY879_.jpg\",\r\n    \"categories\": [\"Summer Collection\"],\r\n    \"size\": [\"S\",\"M\",\"L\",\"XL\",\"2XL\"],\r\n    \"color\": [\"Black\",\"White\" ,\"White\", \"purple-Grey\",\"Orange-Black\"],\r\n    \"price\": 700,\r\n    \"inStock\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products"]
+        }
+      },
+      "response": [
+        {
+          "name": "Add the Products to DB",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\":\"Hawaiin Aloha Printed Half Sleeve Shirt\",\r\n    \"desc\": \"GLORYBOYZ Men's Summer Beach Wear Travel Floral Hawaiin Aloha Printed Half Sleeve Shirt..\",\r\n    \"img\": \"https://m.media-amazon.com/images/I/81gDK6EYl+L._UY879_.jpg\",\r\n    \"categories\": [\"Summer Collection\"],\r\n    \"size\": [\"S\",\"M\",\"L\",\"XL\",\"2XL\"],\r\n    \"color\": [\"Black\",\"White\", \"purple-Grey\",\"Orange-Black\"],\r\n    \"price\": 700,\r\n    \"inStock\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/products",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "494"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1ee-ELqlBCClvRg77IzRZRNWeQClj8w\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 18 Jul 2022 08:19:38 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"title\": \"Hawaiin Aloha Printed Half Sleeve Shirt\",\n    \"desc\": \"GLORYBOYZ Men's Summer Beach Wear Travel Floral Hawaiin Aloha Printed Half Sleeve Shirt..\",\n    \"img\": \"https://m.media-amazon.com/images/I/81gDK6EYl+L._UY879_.jpg\",\n    \"categories\": [\n        \"Summer Collection\"\n    ],\n    \"size\": [\n        \"S\",\n        \"M\",\n        \"L\",\n        \"XL\",\n        \"2XL\"\n    ],\n    \"color\": [\n        \"Black\",\n        \"White\",\n        \"White\",\n        \"purple-Grey\",\n        \"Orange-Black\"\n    ],\n    \"price\": 700,\n    \"inStock\": true,\n    \"_id\": \"62d5179a6d20a6005f474e4a\",\n    \"createdAt\": \"2022-07-18T08:19:38.652Z\",\n    \"updatedAt\": \"2022-07-18T08:19:38.652Z\",\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get all the products with querry",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/findProducts?category=Men's cloths&&limit=2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "findProducts"],
+          "query": [
+            {
+              "key": "category",
+              "value": "Men's cloths"
+            },
+            {
+              "key": null,
+              "value": null
+            },
+            {
+              "key": "limit",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get all the products with querry",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/products/findProducts?category=Men's cloths&&limit=2",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products", "findProducts"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Men's cloths"
+                },
+                {
+                  "key": null,
+                  "value": null
+                },
+                {
+                  "key": "limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1036"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"40c-lBxDZm0bef7uHuF2sHTBJrKtVWw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 14 Jul 2022 18:27:13 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": \"62c320796976f785c6efa419\",\n        \"title\": \" Striped Causal Wear Men's\",\n        \"desc\": \"The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.\",\n        \"img\": \"https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Purple\",\n            \"Orange\"\n        ],\n        \"price\": 400,\n        \"inStock\": false,\n        \"createdAt\": \"2022-07-04T17:16:41.138Z\",\n        \"updatedAt\": \"2022-07-10T01:52:33.002Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c3205f6976f785c6efa415\",\n        \"title\": \"Priyanka Trends Striped Causal Wear Men's\",\n        \"desc\": \"The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.\",\n        \"img\": \"https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Pink\",\n            \"Blue\",\n            \"Red\",\n            \"Orange\"\n        ],\n        \"price\": 400,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:16:15.480Z\",\n        \"updatedAt\": \"2022-07-10T01:52:10.966Z\",\n        \"__v\": 0\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get a  product",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/find/62b4197f27fcdaec27914399",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "find", "62b4197f27fcdaec27914399"]
+        }
+      },
+      "response": [
+        {
+          "name": "Get a  product",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/products/find/62c31f296976f785c6efa40f",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products", "find", "62c31f296976f785c6efa40f"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "765"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2fd-ltZS0P9mivBJt/DPJlci5kidWJI\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 14 Jul 2022 18:27:01 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"62c31f296976f785c6efa40f\",\n    \"title\": \"queens world Men's Soft Poli Lycra Digital Printed Casual Homewear Set Night Suit Beach Wear\",\n    \"desc\": \"The queens world brand Presenting a New Lounge Wear made of premium quality material. Searching for casual shirts for this summer or festive? Then this smart shirt, Digital Printed queens world shirt from the house of queens world Garments is here to end your search. This amazing printed shirt will make you fall in love with the attractive color\",\n    \"img\": \"https://m.media-amazon.com/images/I/31le0l0pG2L._UX522_.jpg\",\n    \"categories\": [\n        \"Men's cloths\",\n        \"Summer\"\n    ],\n    \"size\": [\n        \"S\",\n        \"M\",\n        \"L\",\n        \"XL\"\n    ],\n    \"color\": [\n        \"Black\",\n        \"Gray\"\n    ],\n    \"price\": 700,\n    \"inStock\": true,\n    \"createdAt\": \"2022-07-04T17:11:05.831Z\",\n    \"updatedAt\": \"2022-07-10T01:51:00.477Z\",\n    \"__v\": 0\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update A Product",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{  \"color\": [\r\n            \"Black\",\r\n            \"Gray\"\r\n        ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/62d5179a6d20a6005f474e4a",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "62d5179a6d20a6005f474e4a"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update A User",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{  \"img\": \"https://image.winudf.com/v2/image1/Y29tLmJ1bnR5YXBweC5hdnRhcm1ha2VyX3NjcmVlbl8wXzE1NjM0OTUwODFfMDg3/screen-0.jpg?fakeurl=1&type=.webp\",\r\n\"password\":\"password\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/user/62c321126976f785c6efa421",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "user", "62c321126976f785c6efa421"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all the products Copy",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/findProducts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "findProducts"]
+        }
+      },
+      "response": [
+        {
+          "name": "Get all the products Copy",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/products/findProducts",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products", "findProducts"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "6255"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"186f-P4TMgeoFXu9YAKzTnV1cCVa0MPU\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 14 Jul 2022 18:26:53 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": \"62c3189d6976f785c6efa40b\",\n        \"title\": \"AARA Women's Polyester V-Neck Skater Knee Length Casual Dress\",\n        \"desc\": \"Aara Women's Knee Length Dress ( 201605233-L_Navy Blue_Large)\",\n        \"img\": \"https://m.media-amazon.com/images/I/71HtA8t+7wS._UY741_.jpg\",\n        \"categories\": [\n            \"Women's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"White\",\n            \"Yellow\",\n            \"Orange\"\n        ],\n        \"price\": 800,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T16:43:09.520Z\",\n        \"updatedAt\": \"2022-07-10T01:49:29.195Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c31ed96976f785c6efa40d\",\n        \"title\": \"Atyantah Men's Summer Night Wear Launge Wear Suit/dress- Shirt Boxer Pair-Pack-20 Variation\",\n        \"desc\": \"Aara Women's Knee Length Dress ( 201605233-L_Navy Blue_Large)\",\n        \"img\": \"https://m.media-amazon.com/images/I/71tUiyENrAL._UY679_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        \"color\": [\n            \"Yellow\",\n            \"Green\"\n        ],\n        \"price\": 700,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:09:45.098Z\",\n        \"updatedAt\": \"2022-07-10T01:50:11.361Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c31f296976f785c6efa40f\",\n        \"title\": \"queens world Men's Soft Poli Lycra Digital Printed Casual Homewear Set Night Suit Beach Wear\",\n        \"desc\": \"The queens world brand Presenting a New Lounge Wear made of premium quality material. Searching for casual shirts for this summer or festive? Then this smart shirt, Digital Printed queens world shirt from the house of queens world Garments is here to end your search. This amazing printed shirt will make you fall in love with the attractive color\",\n        \"img\": \"https://m.media-amazon.com/images/I/31le0l0pG2L._UX522_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Gray\"\n        ],\n        \"price\": 700,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:11:05.831Z\",\n        \"updatedAt\": \"2022-07-10T01:51:00.477Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c31f7e6976f785c6efa411\",\n        \"title\": \"Nidhi Sequence Men's Rayon Cotton Lining Digital Printed Stitched Half Sleeve Shirt\",\n        \"desc\": \"We Launch exclusive new range of high quality printed casual shirt for mans under range; This printed casual shirt has slim collar; a full button placket; long sleeves; and a curved hemline; the product made out of best quality Rayon. It designed for comfort and style; it can be worn to parties; casual meetings or a movie date. Make it up with a pair of denims; chinos; shorts or formal trousers and set the town on fire with your Style. 100% Washable Digital Printed Shirts Fabric White Hand-wash, MACHINE WASH DIGITAL PRINTED SHIRTS.\",\n        \"img\": \"https://m.media-amazon.com/images/I/71XpfdVVJFL._UX679_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\"\n        ],\n        \"color\": [\n            \"Yellow\",\n            \"Green\"\n        ],\n        \"price\": 500,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:12:30.297Z\",\n        \"updatedAt\": \"2022-07-10T01:51:25.697Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c31ffd6976f785c6efa413\",\n        \"title\": \"BLIVE Men's Round Neck Full Sleeves T-Shirt\",\n        \"desc\": \"High quality premium Round Neck Full sleeves Tshirt direct from the manufacturers\",\n        \"img\": \"https://m.media-amazon.com/images/I/51lomokxxXL._UX679_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Pink\",\n            \"Blue\",\n            \"Red\",\n            \"Orange\"\n        ],\n        \"price\": 200,\n        \"inStock\": false,\n        \"createdAt\": \"2022-07-04T17:14:37.920Z\",\n        \"updatedAt\": \"2022-07-10T01:51:46.970Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c3205f6976f785c6efa415\",\n        \"title\": \"Priyanka Trends Striped Causal Wear Men's\",\n        \"desc\": \"The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.\",\n        \"img\": \"https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Pink\",\n            \"Blue\",\n            \"Red\",\n            \"Orange\"\n        ],\n        \"price\": 400,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:16:15.480Z\",\n        \"updatedAt\": \"2022-07-10T01:52:10.966Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c320796976f785c6efa419\",\n        \"title\": \" Striped Causal Wear Men's\",\n        \"desc\": \"The I-Brand Digital Print Casual Shirt from the house of I-Brand is ideal for the party, evening, valentines day, birthday, DJ night, etc.\",\n        \"img\": \"https://m.media-amazon.com/images/I/91UFuodo53S._UY741_.jpg\",\n        \"categories\": [\n            \"Men's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Purple\",\n            \"Orange\"\n        ],\n        \"price\": 400,\n        \"inStock\": false,\n        \"createdAt\": \"2022-07-04T17:16:41.138Z\",\n        \"updatedAt\": \"2022-07-10T01:52:33.002Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c320da6976f785c6efa41b\",\n        \"title\": \"Women's Crepe Wrap Maxi Dress\",\n        \"desc\": \"Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..\",\n        \"img\": \"https://m.media-amazon.com/images/I/81bCiJ2-HvL._UX679_.jpg\",\n        \"categories\": [\n            \"Women's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Purple\",\n            \"Orange\"\n        ],\n        \"price\": 900,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:18:18.730Z\",\n        \"updatedAt\": \"2022-07-10T01:52:50.148Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c320f86976f785c6efa41f\",\n        \"title\": \"Women's Crepe Wrap Maxi Dress 1\",\n        \"desc\": \"Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..\",\n        \"img\": \"https://m.media-amazon.com/images/I/71hchrZIjGL._SX679._SX._UX._SY._UY_.jpg\",\n        \"categories\": [\n            \"Women's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Red\",\n            \"Orange\"\n        ],\n        \"price\": 900,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:18:48.779Z\",\n        \"updatedAt\": \"2022-07-10T01:53:04.929Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62c321126976f785c6efa421\",\n        \"title\": \"Women's Crepe Wrap Maxi Dress -Powder Blue\",\n        \"desc\": \"Oomph! offers all kinds of dresses for both women and girls - dresses for women under 500, frocks for girls new fashion western, women dresses, dress for girls, dresses for women western wear, dresses for women casual, dress for womens new style, frock girls stylish fashion, dress for women western..\",\n        \"img\": \"https://m.media-amazon.com/images/I/71KNll7rpWL._SX679._SX._UX._SY._UY_.jpg\",\n        \"categories\": [\n            \"Women's cloths\",\n            \"Summer\"\n        ],\n        \"size\": [\n            \"S\",\n            \"M\",\n            \"L\",\n            \"XL\",\n            \"2XL\"\n        ],\n        \"color\": [\n            \"Black\",\n            \"Purple\",\n            \"Yellow\",\n            \"Orange\"\n        ],\n        \"price\": 900,\n        \"inStock\": true,\n        \"createdAt\": \"2022-07-04T17:19:14.658Z\",\n        \"updatedAt\": \"2022-07-10T01:53:21.325Z\",\n        \"__v\": 0\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get all the products IDS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/products/get-products-id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "get-products-id"]
+        }
+      },
+      "response": [
+        {
+          "name": "Get all the products IDS",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/products/get-products-id",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products", "get-products-id"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "298"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"12a-LFOmEYTnCnvMVzoxxaB1LU/PiJk\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 14 Jul 2022 18:26:37 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    \"62c3189d6976f785c6efa40b\",\n    \"62c31ed96976f785c6efa40d\",\n    \"62c31f296976f785c6efa40f\",\n    \"62c31f7e6976f785c6efa411\",\n    \"62c31ffd6976f785c6efa413\",\n    \"62c3205f6976f785c6efa415\",\n    \"62c320796976f785c6efa419\",\n    \"62c320da6976f785c6efa41b\",\n    \"62c320f86976f785c6efa41f\",\n    \"62c321126976f785c6efa421\",\n    \"62c321316976f785c6efa423\"\n]"
+        }
+      ]
+    },
+    {
+      "name": "Login Darpan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\":\"DarpanRajput\",\r\n    \"password\":\"password\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "auth", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login Admin",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"password\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "auth", "login"]
+        }
+      },
+      "response": [
+        {
+          "name": "Login Admin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Admin\",\r\n    \"password\":\"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/auth/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "auth", "login"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "388"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"184-+fNSucggEZQ4FG9UYF695SeAd1s\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 14 Jul 2022 17:41:45 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"_id\": \"62b3420448da307bb6619cc4\",\n    \"username\": \"Admin\",\n    \"email\": \"admin@gmail.com\",\n    \"isAdmin\": true,\n    \"createdAt\": \"2022-09-22T16:23:32.267Z\",\n    \"updatedAt\": \"2022-06-22T16:23:32.267Z\",\n    \"__v\": 0,\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjM0MjA0NDhkYTMwN2JiNjYxOWNjNCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NzgyMDUwNSwiZXhwIjoxNjU4MDc5NzA1fQ.HYSPbxl8Hi9uVlGQcWVoROjqTr-qv66gQocpcoSyEJ0\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All users",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/user/findUsers?new=true&&limit=10",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "user", "findUsers"],
+          "query": [
+            {
+              "key": "new",
+              "value": "true"
+            },
+            {
+              "key": null,
+              "value": null
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get All users",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/user/findUsers?new=true&&limit=10",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "user", "findUsers"],
+              "query": [
+                {
+                  "key": "new",
+                  "value": "true"
+                },
+                {
+                  "key": null,
+                  "value": null
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "700"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2bc-i0+xWU6Z+iH1ioQddZi9Gm9w0vU\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 Jul 2022 07:27:54 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": \"62b3420448da307bb6619cc4\",\n        \"username\": \"Admin\",\n        \"email\": \"admin@gmail.com\",\n        \"password\": \"U2FsdGVkX18/oCuY+pxtJYJzJcM3mkXUxv8viYC7odI=\",\n        \"isAdmin\": true,\n        \"createdAt\": \"2022-09-22T16:23:32.267Z\",\n        \"updatedAt\": \"2022-06-22T16:23:32.267Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62b2af3831a3b9584eb0cffb\",\n        \"username\": \"DarpanRajput\",\n        \"email\": \"darpanrajput@gmail.com\",\n        \"password\": \"U2FsdGVkX1+BgPZMWGwKcwXnYU2EMqoQ4pUlTJLmbF8=\",\n        \"isAdmin\": false,\n        \"createdAt\": \"2022-06-22T05:57:12.573Z\",\n        \"updatedAt\": \"2022-06-22T15:42:11.359Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62b2ac96165d90dde31eeead\",\n        \"username\": \"Darpan\",\n        \"email\": \"darpan@gmail.com\",\n        \"password\": \"password\",\n        \"isAdmin\": false,\n        \"createdAt\": \"2022-06-22T05:45:58.089Z\",\n        \"updatedAt\": \"2022-06-22T05:45:58.089Z\",\n        \"__v\": 0\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GET ALL ORDER",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/orders",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "orders"]
+        }
+      },
+      "response": [
+        {
+          "name": "GET ALL ORDER",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/orders",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "orders"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1678"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"68e-XYSLNgV241G7ISKG3Ma7IVo6aSc\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 21 Jul 2022 12:15:30 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": \"62b4a24c7efe99b1fbbadb10\",\n        \"userId\": \"62b2af3831a3b9584eb0cffb\",\n        \"products\": [\n            {\n                \"productId\": \"62b41af31dd17d9d8c0168ab\",\n                \"quantity\": 2,\n                \"_id\": \"62b4a24c7efe99b1fbbadb11\"\n            },\n            {\n                \"productId\": \"62b41af31dd17d9d8c0168ab\",\n                \"quantity\": 1,\n                \"_id\": \"62b4a24c7efe99b1fbbadb12\"\n            }\n        ],\n        \"amount\": 500,\n        \"address\": \"indian meerut\",\n        \"status\": \"pending\",\n        \"createdAt\": \"2022-05-23T17:26:36.158Z\",\n        \"updatedAt\": \"2022-05-23T17:26:36.158Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62b4a2a27efe99b1fbbadb14\",\n        \"userId\": \"62b2af3831a3b9584eb0cffb\",\n        \"products\": [\n            {\n                \"productId\": \"62b4197f27fcdaec27914399\",\n                \"quantity\": 2,\n                \"_id\": \"62b4a2a27efe99b1fbbadb15\"\n            },\n            {\n                \"productId\": \"62b41aeb1dd17d9d8c0168a7\",\n                \"quantity\": 1,\n                \"_id\": \"62b4a2a27efe99b1fbbadb16\"\n            }\n        ],\n        \"amount\": 600,\n        \"address\": \"Delhi,India\",\n        \"status\": \"pending\",\n        \"createdAt\": \"2022-06-23T17:28:02.289Z\",\n        \"updatedAt\": \"2022-06-23T17:28:02.289Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62b4a3677efe99b1fbbadb18\",\n        \"userId\": \"62b2ac96165d90dde31eeead\",\n        \"products\": [\n            {\n                \"productId\": \"62b4197f27fcdaec27914399\",\n                \"quantity\": 2,\n                \"_id\": \"62b4a3677efe99b1fbbadb19\"\n            },\n            {\n                \"productId\": \"62b41aeb1dd17d9d8c0168a7\",\n                \"quantity\": 3,\n                \"_id\": \"62b4a3677efe99b1fbbadb1a\"\n            }\n        ],\n        \"amount\": 900,\n        \"address\": \"New Delhi,India Gate,India\",\n        \"status\": \"pending\",\n        \"createdAt\": \"2022-05-23T17:31:19.186Z\",\n        \"updatedAt\": \"2022-05-23T17:31:19.186Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62d92c08ecd4e35e6803e02d\",\n        \"userId\": \"62d82578938d10f074c5c8e9\",\n        \"products\": [\n            {\n                \"productId\": \"62c31f7e6976f785c6efa411\",\n                \"quantity\": 1,\n                \"_id\": \"62d92c08ecd4e35e6803e02e\"\n            }\n        ],\n        \"amount\": 515,\n        \"address\": \"{\\\"city\\\":\\\"MEERUT\\\",\\\"country\\\":\\\"IN\\\",\\\"line1\\\":\\\"204\\\",\\\"line2\\\":\\\"RA bazar Meerut cantt , Meerut\\\",\\\"postal_code\\\":\\\"250001\\\",\\\"state\\\":\\\"Uttar Pradesh\\\"}\",\n        \"status\": \"pending\",\n        \"createdAt\": \"2022-07-21T10:35:52.730Z\",\n        \"updatedAt\": \"2022-07-21T10:35:52.730Z\",\n        \"__v\": 0\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "User Stats",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/user/stats",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "user", "stats"]
+        }
+      },
+      "response": [
+        {
+          "name": "User Stats",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/user/stats",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "user", "stats"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "41"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"29-LFw4JsE2wIWhSnZayeptclqfSkc\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 Jul 2022 09:17:14 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": 6,\n        \"total\": 2\n    },\n    {\n        \"_id\": 9,\n        \"total\": 1\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GET MONTHLY INCOME",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer ente",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/orders/income",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "orders", "income"]
+        }
+      },
+      "response": [
+        {
+          "name": "GET MONTHLY INCOME",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/orders/income",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "orders", "income"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "46"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2e-6qAqK5Ubajihp7xuGeHwmIiHBwI\""
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 Jul 2022 11:17:25 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"_id\": 6,\n        \"total\": 600\n    },\n    {\n        \"_id\": 5,\n        \"total\": 1400\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get Product Stats",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/orders/income?pid=62b41af31dd17d9d8c0168ab",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "orders", "income"],
+          "query": [
+            {
+              "key": "pid",
+              "value": "62b41af31dd17d9d8c0168ab"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE A PRODUCT",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/api/products/62d66e5d5b4e026ff501c6a9",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "products", "62d66e5d5b4e026ff501c6a9"]
+        }
+      },
+      "response": [
+        {
+          "name": "DELETE A PRODUCT",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer enter-the-token-key",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:5000/api/products/62d5a917605911ce3e521642",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["api", "products", "62d5a917605911ce3e521642"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "21"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"15-Eyxc8BYa/oK+xH55TedvrAFkR8U\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 18 Jul 2022 18:42:53 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "\"df has been deleted\""
+        }
+      ]
+    },
+    {
+      "name": "Register a User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "Bearer enter-the-token-key",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\":\"name\",\r\n     \"password\":\"password\",\r\n     \"email\":\"email\",\r\n     \"isAdmin\":false,\r\n     \"img\":\"imgURL\"\r\n\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "auth", "register"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
