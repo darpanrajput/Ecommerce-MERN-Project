@@ -31,6 +31,24 @@ mongoose
     console.log(err);
   });
 
+const loggerMiddleware=(req,res,next)=>{
+  console.log("headers", req?.headers);
+  const origin = req?.headers?.origin || 'No Origin Header';
+  const referer = req?.headers?.referer || 'No Referer Header';
+  const host = req?.headers?.host || 'No Host Header';
+  const clientIP = req?.ip || 'No IP';
+  const forwardedFor = req?.headers['x-forwarded-for'] || 'No X-Forwarded-For Header';
+
+  console.log("Request Source Information:");
+  console.log("Origin:", origin);
+  console.log("Referer:", referer);
+  console.log("Host:", host);
+  console.log("Client IP:", clientIP);
+  console.log("X-Forwarded-For:", forwardedFor);
+  next()
+}
+
+app.use(loggerMiddleware)
 
 app.get("/",(req,res)=>{
   res.send(`<!DOCTYPE html>
