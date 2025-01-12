@@ -23,7 +23,7 @@ const corsOptions = {
   credentials: true,  // Enable if cookies or authorization headers are needed
 }
 
-app.use(cors());
+// app.use(cors());
 // app.use(cors({ origin: "http//:localhost:3000" }));
 app.use(express.json());
 
@@ -72,6 +72,11 @@ app.get("/",(req,res)=>{
     </body>
     </html>`)
 })
+
+app.get("/api/healthcheck", (req,res) => {
+  res.send("<h1>Working</h1>")
+});
+
 app.use("/api/user", cors(corsOptions), userRoute); //==>lh:5000/api/user/usertest
 
 app.use("/api/payment",cors(corsOptions), razorPayRoute);
@@ -85,10 +90,6 @@ app.use("/api/products",cors(corsOptions), productsRoute);
 app.use("/api/orders", cors(corsOptions),orderRoute);
 
 app.use("/api/checkout",cors(corsOptions), stripeRoute);
-
-app.get("/api/healthcheck", (req,res) => {
-  res.send("<h1>Working</h1>")
-});
 
 app.get("/logo", (req, res) => {
   //PATH GIVEN A CURRENT DIR + IMAGE NAME
