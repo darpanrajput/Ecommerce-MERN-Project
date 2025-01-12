@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const Razorpay = require("razorpay");
-const RazorPayOrder = require("../models/razor-pay/RazorPayOrder");
+const RazorPayOrder = require("../models/razor-pay/RazorPayOrder.js");
 const util = require("util");
 const shortid = require("shortid");
 router.get("/get-razorpay-key", (req, res) => {
