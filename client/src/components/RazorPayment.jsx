@@ -29,7 +29,7 @@ const RazorPayPayment = () => {
   // FETCH THE ORDER FROM MONGO DB IF ANY
   async function fetchOrders() {
     const { data } = await axios.get(
-      "http://localhost:5000/api/payment/list-orders"
+      "https://ecommerce-mern-project-e09o.onrender.com/api/payment/list-orders"
     );
     setOrders(data);
   }
@@ -51,7 +51,7 @@ const RazorPayPayment = () => {
         setLoading(true);
         console.log("loading=" + loading);
         const result = await axios.post(
-          "http://localhost:5000/api/payment/create-order",
+          "https://ecommerce-mern-project-e09o.onrender.com/api/payment/create-order",
           {
             amount: orderAmount + "00",
           }
@@ -66,7 +66,7 @@ const RazorPayPayment = () => {
         const {
           data: { key: razorpayKey },
         } = await axios.get(
-          "http://localhost:5000/api/payment/get-razorpay-key"
+          "https://ecommerce-mern-project-e09o.onrender.com/api/payment/get-razorpay-key"
         );
         //STORE RESULT INTO A JSON FILE
         // require("fs").fs.writeFileSync(
@@ -97,7 +97,7 @@ const RazorPayPayment = () => {
             );
 
             const result = await axios.post(
-              "http://localhost:5000/api/payment/pay-order",
+              "https://ecommerce-mern-project-e09o.onrender.com/api/payment/pay-order",
               {
                 amount: amount,
                 razorpayPaymentId: response.razorpay_payment_id,

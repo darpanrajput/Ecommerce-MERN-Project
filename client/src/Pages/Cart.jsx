@@ -210,7 +210,7 @@ export const Cart = () => {
     const makeRequest = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/checkout/stripe-checkout-session",
+          "https://ecommerce-mern-project-e09o.onrender.com/api/checkout/stripe-checkout-session",
           {
             // items: [
             //   { id: 1, quantity: 3 },
