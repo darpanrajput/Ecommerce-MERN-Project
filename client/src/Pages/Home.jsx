@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { Newsletter } from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
+import HomePageModal from "../components/HomePageModal";
 import { Navbar } from "../Navbar/Navbar";
 
 export const Home = () => {
@@ -17,6 +18,7 @@ export const Home = () => {
       <Products />
       <Newsletter />
       <Footer />
+      <HomePageModal/>
     </div>
   );
 };
