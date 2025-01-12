@@ -10,21 +10,12 @@ const razorPayCreateOrderRoute = require("./routes/razorpayorder");
 const razorPayOrderRoute = require("./routes/razorpayorder");
 const paymentVerificationRoute = require("./routes/razorpayorder");
 const authRoute = require("./routes/auth");
-
 const productsRoute = require("./routes/product");
 const orderRoute = require("./routes/order");
 const path = require("path");
 const stripeRoute = require("./routes/stripe");
-// Define the CORS options
-const corsOptions = {
-  origin: process.env.ORIGIN,  // Allow only this origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],       // Allowed HTTP methods
-  allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
-  credentials: true,  // Enable if cookies or authorization headers are needed
-}
-
-// app.use(cors());
-// app.use(cors({ origin: "http//:localhost:3000" }));
+const AllowedOrigin=require("./middleware/allowedOrigin")
+app.use(cors())
 app.use(express.json());
 
 mongoose
@@ -77,19 +68,19 @@ app.get("/api/healthcheck", (req,res) => {
   res.send("<h1>Working</h1>")
 });
 
-app.use("/api/user", cors(corsOptions), userRoute); //==>lh:5000/api/user/usertest
+app.use("/api/user", AllowedOrigin, userRoute); //==>lh:5000/api/user/usertest
 
-app.use("/api/payment",cors(corsOptions), razorPayRoute);
-app.use("/api/payment",cors(corsOptions), razorPayCreateOrderRoute);
-app.use("/api/payment",cors(corsOptions), razorPayOrderRoute);
-app.use("/api/payment",cors(corsOptions), paymentVerificationRoute);
-app.use("/api/auth",cors(corsOptions), authRoute);
+app.use("/api/payment",AllowedOrigin, razorPayRoute);
+app.use("/api/payment",AllowedOrigin, razorPayCreateOrderRoute);
+app.use("/api/payment",AllowedOrigin, razorPayOrderRoute);
+app.use("/api/payment",AllowedOrigin, paymentVerificationRoute);
+app.use("/api/auth",AllowedOrigin, authRoute);
 
-app.use("/api/products",cors(corsOptions), productsRoute);
+app.use("/api/products",AllowedOrigin, productsRoute);
 
-app.use("/api/orders", cors(corsOptions),orderRoute);
+app.use("/api/orders", AllowedOrigin,orderRoute);
 
-app.use("/api/checkout",cors(corsOptions), stripeRoute);
+app.use("/api/checkout",AllowedOrigin, stripeRoute);
 
 app.get("/logo", (req, res) => {
   //PATH GIVEN A CURRENT DIR + IMAGE NAME
