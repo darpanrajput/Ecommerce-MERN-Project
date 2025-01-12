@@ -5,13 +5,7 @@ const AllowedOrigin = async (req, res, next) => {
     const host = req?.headers?.host || 'No Host Header';
     const clientIP = req?.ip || 'No IP';
     const forwardedFor = req?.headers['x-forwarded-for'] || 'No X-Forwarded-For Header';
-
     const clientIPs = req?.headers['x-forwarded-for']?.split(':')[0] || req?.connection?.remoteAddress;
-
-    if (blockedIPs.includes(clientIPs)) {
-        console.log(`Blocked request from IP: ${clientIPs}`);
-        return res.status(200).json({ error: 'Forbidden: Unauthorized Origin' });
-    }
 
     if (process.env.NODE_ENV == 'developement') {
         /* if it is in development environment bypass the AllowedOrigin */
