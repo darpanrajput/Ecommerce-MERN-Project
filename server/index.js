@@ -31,6 +31,21 @@ mongoose
     console.log(err);
   });
 
+
+app.get("/",(req,res)=>{
+  res.send(`<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hello World</title>
+    </head>
+    <body>
+      <h1>Hello, World!</h1>
+      <p>This is a response from your Node.js backend.</p>
+    </body>
+    </html>`)
+})
 app.use("/api/user", userRoute); //==>lh:5000/api/user/usertest
 
 app.use("/api/payment", razorPayRoute);
@@ -45,8 +60,8 @@ app.use("/api/orders", orderRoute);
 
 app.use("/api/checkout", stripeRoute);
 
-app.get("/api/test", () => {
-  console.log("test is sucessfull");
+app.get("/api/healthcheck", (req,res) => {
+  res.send("<h1>Working</h1>")
 });
 
 app.get("/logo", (req, res) => {
