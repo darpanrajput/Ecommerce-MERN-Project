@@ -56,9 +56,7 @@ const RazorPayPayment = () => {
             amount: orderAmount + "00",
           }
         );
-        console.log(
-          util.inspect(result, { showHidden: false, depth: null, colors: true })
-        );
+        console.log(util.inspect(result, { showHidden: false, depth: null, colors: true }));
         console.log("response from rxpay=" + result.data);
         // STORE THE DATA INTO A FILE
         // require("fs").fs.writeFileSync("Result.json", JSON.stringify(result));
@@ -87,14 +85,7 @@ const RazorPayPayment = () => {
           order_id: order_id,
           handler: async function (response) {
             //called after successful payment
-            console.log(
-              "handler response=" +
-                util.inspect(response, {
-                  showHidden: false,
-                  depth: null,
-                  colors: true,
-                })
-            );
+            console.log("handler response=" +util.inspect(response, {showHidden: false,depth: null,colors: true,}));
 
             const result = await axios.post(
               "https://ecommerce-mern-project-e09o.onrender.com/api/payment/pay-order",

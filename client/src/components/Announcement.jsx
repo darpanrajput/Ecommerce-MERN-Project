@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../colors/Colors.js";
 import { mobile } from "../responsive";
 
-console.log(COLORS.primary);
+//console.log(COLORS.primary);
 const Container = styled.div`
   height: 30px;
   background-color: teal;
