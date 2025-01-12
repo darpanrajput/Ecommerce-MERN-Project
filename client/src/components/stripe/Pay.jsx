@@ -36,7 +36,7 @@ const Pay = () => {
 
         );
 
-        console.log(res);
+       // console.log(res);
         {
           res?.data.url ? (
             (window.location = res.data.url)

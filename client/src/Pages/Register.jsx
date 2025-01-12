@@ -74,11 +74,11 @@ export const Register = () => {
 
   const registerUser = (e) => {
     e.preventDefault();
-    console.log(75, "Register", user);
-    console.log(76, "Register", p1.current.value !== p2.current.value);
-    console.log(77, "Register", p1 === null && p2 === null);
-    console.log(78, "Register", p1, p2);
-    console.log(76, "Register", p1.current.value, p2.current.value);
+   // console.log(75, "Register", user);
+   // console.log(76, "Register", p1.current.value !== p2.current.value);
+   // console.log(77, "Register", p1 === null && p2 === null);
+   // console.log(78, "Register", p1, p2);
+   // console.log(76, "Register", p1.current.value, p2.current.value);
 
     if (
       (!p1.current.value && !p2.current.value) ||

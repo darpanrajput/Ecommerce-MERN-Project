@@ -36,7 +36,7 @@ const RazorPayPayment = () => {
 
   // FETCH OLD STORED ORDER FROM DB WHEN THE APP RUNS FIRST
   useEffect(() => {
-    console.log("USE-EFFECT-CALLED");
+   // console.log("USE-EFFECT-CALLED");
     fetchOrders();
   }, []);
 
@@ -49,15 +49,15 @@ const RazorPayPayment = () => {
     script.onload = async () => {
       try {
         setLoading(true);
-        console.log("loading=" + loading);
+       // console.log("loading=" + loading);
         const result = await axios.post(
           "https://ecommerce-mern-project-e09o.onrender.com/api/payment/create-order",
           {
             amount: orderAmount + "00",
           }
         );
-        console.log(util.inspect(result, { showHidden: false, depth: null, colors: true }));
-        console.log("response from rxpay=" + result.data);
+        //console.log(util.inspect(result, { showHidden: false, depth: null, colors: true }));
+       // console.log("response from rxpay=" + result.data);
         // STORE THE DATA INTO A FILE
         // require("fs").fs.writeFileSync("Result.json", JSON.stringify(result));
         const { amount, id: order_id, currency } = result.data;
@@ -74,7 +74,7 @@ const RazorPayPayment = () => {
 
         const __DEV__ = document.domain === "localhost";
 
-        console.log("key id=" + __DEV__ ? razorpayKey : "PRODUCTION_KEY");
+        //console.log("key id=" + __DEV__ ? razorpayKey : "PRODUCTION_KEY");
         const options = {
           key: __DEV__ ? razorpayKey : "PRODUCTION_KEY",
           amount: amount.toString(),
@@ -85,7 +85,7 @@ const RazorPayPayment = () => {
           order_id: order_id,
           handler: async function (response) {
             //called after successful payment
-            console.log("handler response=" +util.inspect(response, {showHidden: false,depth: null,colors: true,}));
+           // console.log("handler response=" +util.inspect(response, {showHidden: false,depth: null,colors: true,}));
 
             const result = await axios.post(
               "https://ecommerce-mern-project-e09o.onrender.com/api/payment/pay-order",
@@ -116,7 +116,7 @@ const RazorPayPayment = () => {
         };
 
         setLoading(false);
-        console.log("loading=" + loading);
+        //console.log("loading=" + loading);
 
         const paymentObject = new window.Razorpay(options);
         paymentObject.open();

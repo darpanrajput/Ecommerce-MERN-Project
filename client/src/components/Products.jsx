@@ -12,7 +12,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 const Products = ({ cat, filters, sort }) => {
-  console.log(cat, filters, sort);
+ // console.log(cat, filters, sort);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setfilteredProducts] = useState([]);
 
@@ -46,7 +46,7 @@ const Products = ({ cat, filters, sort }) => {
         )
       );
   }, [products, cat, filters]);
-  console.log("filteredProducts:", filteredProducts);
+  //console.log("filteredProducts:", filteredProducts);
 
   useEffect(() => {
     if (sort === "newest") {

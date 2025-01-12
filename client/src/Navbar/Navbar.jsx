@@ -79,12 +79,12 @@ export const Navbar = () => {
   const goToHome = () => {
     navigate("/", { replace: true });
   };
-  console.log(cart);
+ // console.log(cart);
   // );
 
   const logoutUser = () => {
     logout(dispatch);
-    console.log("logout called");
+   // console.log("logout called");
     const resolveAfter3Sec = new Promise((resolve) =>
       setTimeout(resolve, 3000)
     );

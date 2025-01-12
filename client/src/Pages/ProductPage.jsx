@@ -116,7 +116,7 @@ const Product = () => {
   const id = location.pathname.split("/")[3];
   // console.log("product_id=", id)
   const userId = useSelector((state) => state.cart.userId);
-  console.log("userId ", userId);
+  // console.log("userId ", userId);
   const [product, setProduct] = useState({});
   const cartProducts = useSelector((state) => state.cart.products);
   const dispatch = useDispatch();

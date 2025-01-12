@@ -202,7 +202,7 @@ export const Cart = () => {
   };
 
   const checkout = () => {
-    console.log("user=>", user);
+    //console.log("user=>", user);
     if (!user) {
       alert("you are not logged in . please sign in first");
       return;
@@ -241,7 +241,7 @@ export const Cart = () => {
   };
 
   const removeCartItem = (id) => {
-    console.log("removed cart item id=>", id);
+   // console.log("removed cart item id=>", id);
     deleteProducts(id, dispatch);
     toast("Item Removed", {
       position: "bottom-left",
