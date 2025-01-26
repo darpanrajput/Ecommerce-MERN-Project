@@ -1,6 +1,6 @@
 [
   {
-    "calling function": "const result = await axios.post(https://ecommerce-mern-project-e09o.onrender.com/api/payment/create-order),{amount: orderAmount + '00'});"
+    "calling function": "const result = await axios.post(https://ecommerce-mern-project-lv4p.onrender.com/api/payment/create-order),{amount: orderAmount + '00'});"
   },
 
   {
@@ -45,7 +45,7 @@
         "Content-Type": "application/json"
       },
       "method": "post",
-      "url": "https://ecommerce-mern-project-e09o.onrender.com/api/payment/create-order",
+      "url": "https://ecommerce-mern-project-lv4p.onrender.com/api/payment/create-order",
       "data": { "amount": "6700" }
     },
     "request": {}

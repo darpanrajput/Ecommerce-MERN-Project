@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://ecommerce-mern-project-e09o.onrender.com/api";
+const BASE_URL = "https://ecommerce-mern-project-lv4p.onrender.com/api";
 
 const TOKEN = getToken();
 
